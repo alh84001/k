@@ -165,19 +165,19 @@ k () {
     typeset -i IS_GIT_REPO=0
     typeset GIT_TOPLEVEL
 
-    typeset -i LARGE_FILE_COLOR=196
+    typeset -i LARGE_FILE_COLOR=125
     typeset -a SIZELIMITS_TO_COLOR
     SIZELIMITS_TO_COLOR=(
-        1024  46    # <= 1kb
-        2048  82    # <= 2kb
-        3072  118   # <= 3kb
-        5120  154   # <= 5kb
-       10240  190   # <= 10kb
-       20480  226   # <= 20kb
-       40960  220   # <= 40kb
-      102400  214   # <= 100kb
-      262144  208   # <= 0.25mb || 256kb
-      524288  202   # <= 0.5mb || 512kb
+        1024  41    # <= 1kb
+        2048  41    # <= 2kb
+        3072  41   # <= 3kb
+        5120  77   # <= 5kb
+       10240  77   # <= 10kb
+       20480  113   # <= 20kb
+       40960  149   # <= 40kb
+      102400  143   # <= 100kb
+      262144  137   # <= 0.25mb || 256kb
+      524288  131   # <= 0.5mb || 512kb
       )
     typeset -i ANCIENT_TIME_COLOR=236  # > more than 2 years old
     typeset -a FILEAGES_TO_COLOR
